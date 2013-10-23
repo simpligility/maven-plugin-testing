@@ -137,6 +137,10 @@ under the License.
     <url>https://builds.apache.org/job/maven-plugin-testing/</url>
   </ciManagement>
   <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
     <site>
       <id>apache.website</id>
       <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/maven/content/${maven.site.path}</url>
@@ -264,6 +268,17 @@ under the License.
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.4.8</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh-releases</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <stagingProfileId>42b61fb4c62700</stagingProfileId>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <inherited>false</inherited>
