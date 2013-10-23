@@ -58,7 +58,7 @@ under the License.
       <version>2.0.11</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.plugin-testing</groupId>
+      <groupId>com.simpligility.org.apache.maven.plugin-testing</groupId>
       <artifactId>maven-test-tools</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
