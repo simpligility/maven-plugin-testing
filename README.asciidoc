@@ -1,0 +1,10 @@
+== Maven Plugin Testing
+
+This project is a temporary for of the the Maven Plugin Testing module from http://maven.apache.org/plugin-testing/. 
+
+It just releases the project as of svn revision 1534908 from http://svn.apache.org/repos/asf/maven/plugin-testing/trunk
+which includes support for Maven 3.1.1, but has not been released yet.
+
+This is necessary since the Android Maven Plugin needs Maven 3.1.1 support and requires this project.
+
+The only change will be the groupId's being moved into com.simpligility.*
