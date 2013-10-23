@@ -123,10 +123,10 @@ under the License.
     <module>maven-test-tools</module>
   </modules>
 
-  <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/plugin-testing/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/plugin-testing/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/maven/plugin-testing/trunk</url>
+ <scm>
+    <connection>scm:git:git://github.com/simpligility/maven-plugin-testing.git</connection>
+    <developerConnection>scm:git:git@github.com:simpligility/maven-plugin-testing.git</developerConnection>
+    <url>http://github.com/simpligility/maven-plugin-testing/tree/master</url>
   </scm>
   <issueManagement>
     <system>jira</system>
